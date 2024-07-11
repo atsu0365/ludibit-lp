@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 640">
+  <!-- Background with confetti -->
+  <rect width="360" height="640" fill="#f5f5f5"/>
+  <circle cx="30" cy="30" r="10" fill="#ffc800"/>
+  <circle cx="330" cy="50" r="15" fill="#58cc02"/>
+  <circle cx="50" cy="600" r="12" fill="#1cb0f6"/>
+  <circle cx="300" cy="620" r="8" fill="#ff4b4b"/>
+  
+  <!-- Header -->
+  <rect width="360" height="80" fill="#58cc02"/>
+  <text x="20" y="50" font-family="Arial" font-size="28" font-weight="bold" fill="white">クエストクリア！</text>
+  <text x="320" y="50" font-family="Arial" font-size="40">🎉</text>
+  
+  <!-- Quest Info Card -->
+  <rect x="20" y="100" width="320" height="200" rx="10" fill="white" stroke="#e5e5e5" stroke-width="2"/>
+  <text x="40" y="130" font-family="Arial" font-size="20" font-weight="bold" fill="#4b4b4b">夏休みの宿題マスター</text>
+  <text x="40" y="160" font-family="Arial" font-size="16" fill="#777">説明: 夏休みの宿題を全て終わらせよう！</text>
+  <text x="40" y="190" font-family="Arial" font-size="16" fill="#777">期限: 2024年8月31日</text>
+  <text x="40" y="220" font-family="Arial" font-size="18" font-weight="bold" fill="#58cc02">達成日: 2024年8月25日</text>
+  <text x="40" y="250" font-family="Arial" font-size="16" fill="#777">頑張りました！早く終わって偉いね！</text>
+  
+  <!-- Points Earned -->
+  <circle cx="180" cy="380" r="80" fill="#ffc800"/>
+  <text x="180" y="360" font-family="Arial" font-size="24" font-weight="bold" fill="white" text-anchor="middle">獲得ポイント</text>
+  <text x="180" y="410" font-family="Arial" font-size="48" font-weight="bold" fill="white" text-anchor="middle">100</text>
+  
+  <!-- Get Points Button -->
+  <rect x="60" y="480" width="240" height="60" rx="30" fill="#58cc02">
+    <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite" />
+  </rect>
+  <text x="180" y="520" font-family="Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">ポイントを獲得する</text>
+  
+  <!-- Back to Dashboard Link -->
+  <rect x="60" y="560" width="240" height="40" rx="20" fill="#1cb0f6"/>
+  <text x="180" y="585" font-family="Arial" font-size="16" fill="white" text-anchor="middle">ダッシュボードに戻る</text>
+</svg>
