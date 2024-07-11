@@ -1,219 +1,232 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Noto Sans JP', 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background: #333;
+    background-color: #3B4CCA;
     color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.mui-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem 0;
-    text-align: center;
 }
 
-header .logo {
+.logo-text {
     font-size: 1.5rem;
-}
-
-nav a {
+    font-weight: bold;
     color: #fff;
-    margin: 0 1rem;
-    text-decoration: none;
-}
-
-#hero {
-    position: relative;
-    text-align: center;
-    color: white;
 }
 
 .hero-content {
-    
     position: relative;
-}
-
-.hero-image {
-    width: 100%;
-    height: auto;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-}
-
-.hero-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero-text p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-
-.hero-text button {
-    padding: 0.5rem 1.5rem;
-    font-size: 1rem;
-    color: #fff;
-    background: #007BFF;
-    border: none;
-    cursor: pointer;
-}
-
-#features {
-    padding: 2rem;
+    background: linear-gradient(rgba(128, 128, 128, 0.8), rgba(128, 128, 128, 0.8)), url('images/hero-image.png') no-repeat center center/cover;
+    color: white;
     text-align: center;
-    background: #fff;
+    padding: 150px 0 100px;
 }
 
-.feature-img {
-    max-width: 100%;
-    height: auto;
+.hero-content h1 {
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.feature-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.feature {
-    display: flex;
-    align-items: center;
-    margin: 1rem;
-    max-width: 300px;
-}
-
-.feature img {
-    width: 150px;
-    height: auto;
-    margin-right: 1rem;
-}
-
-.feature-content {
-    text-align: left;
-}
-
-#scientific-benefits {
-    padding: 2rem;
-    background: #f4f4f4;
-}
-
-.benefit {
-    display: flex;
-    align-items: center;
+.hero-content p {
+    font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
-.benefit img {
-    width: 150px;
-    height: auto;
-    margin-right: 1rem;
-}
-
-.benefit-text {
-    text-align: left;
-}
-
-.benefit-text h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.benefit-text p {
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-#how-to {
-    padding: 2rem;
-    text-align: center;
-    background: #fff;
-}
-
-#how-to ol {
-    list-style: decimal;
-    padding-left: 1.5rem;
-}
-
-#how-to li {
-    margin-bottom: 1rem;
+.hero-content a {
+    padding: 0.75rem 2rem;
     font-size: 1.2rem;
+    color: #fff;
+    background: #00C300; /* LINEの緑 */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-content a:hover {
+    background-color: #009900; /* LINEの濃い緑 */
+}
+
+.mui-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 100px 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #3B4CCA;
+    text-align: center;
+}
+
+.feature-card, .benefit-card, .step {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-card:hover, .benefit-card:hover, .step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card i, .step-number {
+    font-size: 3rem;
+    color: #3B4CCA;
+    margin-bottom: 1rem;
+}
+
+.benefit-card img, #how-it-works img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.step-number {
+    background-color: #3B4CCA;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1rem;
+    font-weight: bold;
+}
+
+.testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+blockquote {
+    font-style: italic;
+    margin-bottom: 1rem;
 }
 
 #signup {
-    padding: 2rem;
+    background-color: #f4f4f4;
+    padding: 50px 0;
     text-align: center;
-    background: #007BFF;
-    color: #fff;
 }
 
-#signup h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-#signup p {
+#signup a {
+    padding: 0.75rem 2rem;
     font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-
-#signup button {
-    padding: 0.5rem 1.5rem;
-    font-size: 1rem;
-    color: #007BFF;
-    background: #fff;
+    color: #fff;
+    background: #00C300; /* LINEの緑 */
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#signup a:hover {
+    background-color: #009900; /* LINEの濃い緑 */
 }
 
 footer {
-    padding: 1rem;
-    background: #333;
+    background-color: #3B4CCA;
     color: #fff;
+    padding: 50px 0;
     text-align: center;
 }
 
-footer nav a {
+.footer-logo .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer-links a {
     color: #fff;
-    margin: 0 1rem;
     text-decoration: none;
+    margin-right: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: #FFCE00;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #FFCE00;
 }
 
 @media (max-width: 768px) {
-    .feature-list {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .step {
+        flex-basis: calc(50% - 2rem);
+        margin-bottom: 2rem;
+    }
+
+    #signup form {
         flex-direction: column;
         align-items: center;
     }
 
-    .feature {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .benefit {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .benefit img {
+    #signup input[type="email"] {
+        width: 100%;
         margin-bottom: 1rem;
+        border-radius: 5px;
+    }
+
+    #signup button {
+        width: 100%;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .step {
+        flex-basis: 100%;
     }
 }
